@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Tailwind base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-darkbg text-slate-100 font-sans;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(155, 93, 229, 0.15) 0%, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(0, 187, 249, 0.1) 0%, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(0, 245, 212, 0.08) 0%, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(255, 107, 157, 0.08) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0F1C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00F5D4, #9B5DE5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00F5D4, #FF6B9D);
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 245, 212, 0.3);
+  color: #fff;
+}
+
+/* Custom utilities */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-medium transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-accent to-accentBlue text-darkbg font-semibold;
+    @apply hover:shadow-[0_0_30px_rgba(0,245,212,0.5)] hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-accent/50 text-accent backdrop-blur-sm;
+    @apply hover:border-accent hover:bg-accent/10 hover:shadow-[0_0_20px_rgba(0,245,212,0.3)];
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+    @apply shadow-[0_8px_32px_rgba(0,0,0,0.3)];
+  }
+  
+  .glass-card-hover {
+    @apply glass-card transition-all duration-500;
+    @apply hover:border-accent/30 hover:shadow-[0_8px_32px_rgba(0,245,212,0.15)];
+    @apply hover:translate-y-[-8px];
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent via-accentBlue to-accentPurple bg-clip-text text-transparent;
+    background-size: 200% auto;
+  }
+  
+  .gradient-text-animated {
+    @apply gradient-text animate-text-shimmer;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4 gradient-text;
+  }
+  
+  .section-subtitle {
+    @apply text-slate-400 text-lg mb-12 max-w-2xl mx-auto text-center;
+  }
+  
+  .glow-accent {
+    box-shadow: 0 0 40px rgba(0, 245, 212, 0.3);
+  }
+  
+  .glow-purple {
+    box-shadow: 0 0 40px rgba(155, 93, 229, 0.3);
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+/* Animated background blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: blob 7s infinite;
+}
+
+.blob-1 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(155, 93, 229, 0.4), rgba(0, 187, 249, 0.3));
+  top: -100px;
+  left: -100px;
+}
+
+.blob-2 {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, rgba(0, 245, 212, 0.3), rgba(0, 187, 249, 0.3));
+  bottom: -50px;
+  right: -100px;
+  animation-delay: 2s;
+}
+
+.blob-3 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(255, 107, 157, 0.3), rgba(155, 93, 229, 0.3));
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 4s;
+}
+
+/* Grid pattern overlay */
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Particle effect background */
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Text shadow for headings */
+.text-glow {
+  text-shadow: 0 0 40px rgba(0, 245, 212, 0.5);
+}
+
+/* Focus styles */
+input:focus, textarea:focus {
+  @apply outline-none ring-2 ring-accent/50 border-accent/50;
+}
+
+/* Link underline animation */
+.link-animated {
+  position: relative;
+}
+
+.link-animated::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00F5D4, #00BBF9);
+  transition: width 0.3s ease;
+}
+
+.link-animated:hover::after {
+  width: 100%;
+}
+
+/* Skill badge styles */
+.skill-badge {
+  @apply px-4 py-2 rounded-full text-sm font-medium;
+  @apply bg-gradient-to-r from-white/5 to-white/10 border border-white/10;
+  @apply hover:border-accent/50 hover:shadow-[0_0_15px_rgba(0,245,212,0.2)];
+  @apply transition-all duration-300;
+}
+
+/* Timeline styles */
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00F5D4, #00BBF9);
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.5);
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 24px;
+  width: 2px;
+  height: calc(100% - 8px);
+  background: linear-gradient(180deg, rgba(0, 245, 212, 0.5), transparent);
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+/* Project card hover effects */
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 245, 212, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.project-card:hover::before {
+  left: 100%;
+}
+
+/* Morphing border */
+.morphing-border {
+  position: relative;
+}
+
+.morphing-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, #00F5D4, #00BBF9, #9B5DE5, #FF6B9D, #00F5D4);
+  background-size: 400% 400%;
+  border-radius: inherit;
+  z-index: -1;
+  animation: gradient-xy 8s ease infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.morphing-border:hover::before {
+  opacity: 1;
+}
+
+/* Noise texture overlay */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 1000;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
