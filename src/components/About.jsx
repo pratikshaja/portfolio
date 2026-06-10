@@ -139,8 +139,8 @@ export default function About() {
               transition={{ delay: 0.4 }}
             >
               {[
-                { value: '2+', label: 'Years Experience' },
-                { value: '50+', label: 'Projects Completed' },
+                { value: '1+', label: 'Years Experience' },
+                { value: '5+', label: 'Projects Completed' },
                 { value: '100%', label: 'Client Satisfaction' },
               ].map((stat, index) => (
                 <div key={stat.label} className="text-center">
