@@ -140,8 +140,8 @@ export default function About() {
             >
               {[
                 { value: '1+', label: 'Years Experience' },
-                { value: '5+', label: 'Projects Completed' },
-                { value: '100%', label: 'Client Satisfaction' },
+                // { value: '5+', label: 'Projects Completed' },
+                // { value: '100%', label: 'Client Satisfaction' },
               ].map((stat, index) => (
                 <div key={stat.label} className="text-center">
                   <div className="text-3xl font-bold gradient-text">{stat.value}</div>
