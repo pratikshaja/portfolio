@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import {
-  FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaGithub, FaDatabase, FaBootstrap, FaJava
+  FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaGithub, FaDatabase, FaBootstrap, FaJava,
+  FaPython
 } from 'react-icons/fa'
 import {
   SiMongodb, SiExpress, SiTailwindcss, SiPostman, SiMysql
@@ -28,7 +29,7 @@ const skillCategories = [
     skills: [
       { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
       { name: 'Express.js', icon: SiExpress, color: '#FFFFFF' },
-      { name: 'Core Java', icon: FaJava, color: '#007396' },
+      { name: 'Python Django', icon: FaPython, color: '#007396' },
     ]
   },
   {
@@ -48,6 +49,7 @@ const skillCategories = [
       { name: 'Git', icon: FaGitAlt, color: '#F05032' },
       { name: 'GitHub', icon: FaGithub, color: '#FFFFFF' },
       { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
+      { name: 'VS Code', icon: SiVscode, color: '#FF6C37' },
     ]
   },
 ]
