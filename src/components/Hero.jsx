@@ -70,7 +70,7 @@ function FloatingParticles() {
 }
 
 export default function Hero() {
-  const roles = ['MERN Stack Developer', 'Java Enthusiast', 'UI/UX Designer', 'Problem Solver']
+  const roles = ['MERN Stack Developer', 'Python Full Stack Developer', 'UI/UX Designer', 'Problem Solver']
 
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden">

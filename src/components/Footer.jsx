@@ -41,7 +41,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="text-slate-400 leading-relaxed mb-6">
-              MERN Stack Developer crafting beautiful, functional web experiences with clean code and creative solutions.
+              Full Stack Developer crafting beautiful, functional web experiences with clean code and creative solutions.
             </p>
             {/* Social links */}
             <div className="flex gap-3">

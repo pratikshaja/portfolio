@@ -4,31 +4,40 @@ import { FaGraduationCap, FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'rea
 
 const timeline = [
   {
+    type: 'experience',
+    title: 'Full Stack Developer',
+    organization: 'TechB Softwares LLP, Pune',
+    year: '2026',
+    description: 'Built production features for SolarOps — a real-time solar energy invoicing portal. Delivered CUF invoice calculation logic, real-time dashboards with third-party API integration, PDF/Excel export, and scheduler-based invoice automation using Python Django and React.js.',
+    icon: FaBriefcase,
+    color: 'accent',
+  },
+  {
+    type: 'experience',
+    title: 'React JS Developer',
+    organization: 'CodeInfinitys Solution, Sangli',
+    year: '2025',
+    description: 'Built dynamic and responsive web interfaces using React.js. Developed reusable components, integrated REST APIs, and improved frontend performance. Collaborated on MERN-based features.',
+    icon: FaBriefcase,
+    color: 'accentPurple',
+  },
+  {
     type: 'education',
     title: 'Master of Computer Applications (MCA)',
     organization: 'Shivaji University, Kolhapur',
     year: '2024',
-    description: 'Specialized in advanced programming, web technologies, and software development methodologies.',
+    description: 'Specialized in advanced programming, web technologies, and software development methodologies. Graduated with 75%.',
     icon: FaGraduationCap,
-    color: 'accent',
+    color: 'accentBlue',
   },
   {
     type: 'education',
     title: 'Bachelor of Computer Science (BCS)',
     organization: 'Shivaji University, Kolhapur',
     year: '2022',
-    description: 'Foundation in computer science fundamentals, data structures, algorithms, and programming.',
+    description: 'Foundation in computer science fundamentals, data structures, algorithms, and programming. Graduated with 78%.',
     icon: FaGraduationCap,
-    color: 'accentBlue',
-  },
-  {
-    type: 'experience',
-    title: 'Web Development Intern',
-    organization: 'CodeInfinitys Solution, Sangli',
-    year: '2023',
-    description: 'Gained hands-on experience with React.js, building dynamic and responsive web interfaces. Developed reusable components, integrated API data, and implemented smooth UI interactions. Collaborated on MERN-based features and improved frontend performance.',
-    icon: FaBriefcase,
-    color: 'accentPurple',
+    color: 'accentPink',
   },
 ]
 

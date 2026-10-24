@@ -5,7 +5,7 @@ import {
   FaPython
 } from 'react-icons/fa'
 import {
-  SiMongodb, SiExpress, SiTailwindcss, SiPostman, SiMysql
+  SiMongodb, SiExpress, SiTailwindcss, SiPostman, SiMysql,
 } from 'react-icons/si'
 
 const skillCategories = [
@@ -27,9 +27,9 @@ const skillCategories = [
     description: 'Powering apps with robust APIs',
     gradient: 'from-accentPurple to-accentPink',
     skills: [
+      { name: 'Python Django', icon: FaPython, color: '#007396' },
       { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
       { name: 'Express.js', icon: SiExpress, color: '#FFFFFF' },
-      { name: 'Python Django', icon: FaPython, color: '#007396' },
     ]
   },
   {
@@ -49,7 +49,7 @@ const skillCategories = [
       { name: 'Git', icon: FaGitAlt, color: '#F05032' },
       { name: 'GitHub', icon: FaGithub, color: '#FFFFFF' },
       { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
-      { name: 'VS Code', icon: SiVscode, color: '#FF6C37' },
+      // { name: 'VS Code', icon: SiVscode, color: '#FF6C37' },
     ]
   },
 ]
