@@ -70,7 +70,7 @@ function FloatingParticles() {
 }
 
 export default function Hero() {
-  const roles = ['MERN Stack Developer', 'Java Enthusiast', 'UI/UX Designer', 'Problem Solver']
+  const roles = ['MERN Stack Developer', 'Python Full Stack Developer', 'UI/UX Designer', 'Problem Solver']
 
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
@@ -266,14 +266,14 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               className="absolute -bottom-2 -left-6 px-4 py-2 rounded-xl glass-card text-sm"
               animate={{ y: [0, 8, 0], rotate: [0, -3, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, delay: 0.5 }}
             >
               <span className="text-accentPurple font-semibold">50+</span>
               <span className="text-slate-400 ml-1">Projects</span>
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
       </div>

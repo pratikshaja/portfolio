@@ -65,6 +65,8 @@ export default function About() {
                     <span className="text-slate-400">=</span> {'{'}
                     {'\n'}  <span className="text-accent">name</span>: <span className="text-accentYellow">"Pratiksha"</span>,
                     {'\n'}  <span className="text-accent">skills</span>: <span className="text-slate-400">[</span>
+                    {'\n'}    <span className="text-accentPink">"Python"</span>,
+                    {'\n'}    <span className="text-accentPink">"Django"</span>,
                     {'\n'}    <span className="text-accentPink">"React"</span>,
                     {'\n'}    <span className="text-accentPink">"Node.js"</span>,
                     {'\n'}    <span className="text-accentPink">"MongoDB"</span>
@@ -95,13 +97,15 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg text-slate-300 leading-relaxed">
-              I'm a <span className="text-accent font-semibold">detail-oriented MERN Stack Developer</span> who
+              I'm a <span className="text-accent font-semibold">Full Stack Developer with expertise in React.js,
+Python Django, and Node.js</span> who
               loves crafting interactive and efficient web experiences. With a strong foundation in
               computer applications and hands-on experience in modern web technologies.
             </p>
 
             <p className="text-slate-400 leading-relaxed">
-              My strengths lie in building <span className="text-white">responsive UIs with React.js</span>,
+              My strengths lie in building <span className="text-white">building production-grade
+REST APIs with Python Django and Node.js/Express</span>,
               developing clean APIs, and writing maintainable, modular code. I'm constantly exploring
               new tools, improving my development workflow, and pushing myself to grow as a
               <span className="text-accentPurple"> full-stack engineer</span>.
